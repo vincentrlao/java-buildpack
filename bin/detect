@@ -23,6 +23,8 @@ require 'java_buildpack/buildpack'
 
 build_dir = ARGV[0]
 
+puts ">>> Detect script"
+
 components = JavaBuildpack::Buildpack.with_buildpack(build_dir, 'Detect failed with exception %s') do |buildpack|
   buildpack.detect
 end.compact
