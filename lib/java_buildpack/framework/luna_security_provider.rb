@@ -29,7 +29,9 @@ module JavaBuildpack
       # (see JavaBuildpack::Component::BaseComponent#compile)
       def compile
 	    puts ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
-		puts ">>>>>>>>>>>>>>>>>>>> Luna security provider: compile"
+		puts ">>>>>> Luna security provider: compile"
+		puts ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+		puts ">>>>>> Sandbox: " + @droplet.sandbox
 		puts ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
 	  
         download_tar
