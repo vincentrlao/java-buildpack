@@ -20,6 +20,8 @@ require 'java_buildpack/framework/luna_security_provider'
 
 describe JavaBuildpack::Framework::LunaSecurityProvider do
   include_context 'component_helper'
+  
+  puts "Sandbox: " + sandbox
 
   it 'does not detect without luna-n/a service' do
     expect(component.detect).to be_nil
